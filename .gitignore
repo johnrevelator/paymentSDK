@@ -1,0 +1,10 @@
+*.iml
+*.apk
+.DS_Store
+build
+proguard_logs
+.idea/*
+.gradle
+local.properties
+app/schemas/
+*.keystore

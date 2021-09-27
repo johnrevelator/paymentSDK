@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">library</string>
+    <string name="incorrect_user_data">Некорректные данные</string>
+    <string name="incorrect_url">Некорректный URL</string>
+</resources>

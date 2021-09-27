@@ -1,0 +1,3 @@
+rootProject.name = "WebviewLibrary"
+include ':app'
+include ':paymentSDK'
