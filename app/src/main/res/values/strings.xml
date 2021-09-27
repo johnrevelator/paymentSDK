@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WebviewLibrary</string>
+    <string name="app_name">Payment SDK</string>
     <string name="navigate">Перейти</string>
     <string name="default_url">https://web.sbpay.ru/</string>
     <string name="open_in_browser">Открыть в браузере</string>
