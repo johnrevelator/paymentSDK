@@ -18,7 +18,7 @@
   try {
       PaymentService.openPayment(payload)
   } catch (t: Throwable) {
-      Toast.makeText(this, t.message, Toast.LENGTH_LONG).show()
+      print(t.message)
   }
 ```
 
@@ -26,12 +26,12 @@
 
 ```kotlin
   try {
-      PaymentService.openPayment(urlEditText.text.toString())
+      PaymentService.openPayment(url)
   } catch (t: Throwable) {
-      Toast.makeText(this, t.message, Toast.LENGTH_LONG).show()
+      print(t.message)
   }
 ```
-### Use custom default browser
+### Use default browser
 
 ```swift
   PaymentService.defaultBrowser = true
