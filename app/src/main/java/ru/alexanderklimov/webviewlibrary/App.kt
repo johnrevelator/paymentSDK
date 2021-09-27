@@ -1,12 +1,12 @@
 package ru.alexanderklimov.webviewlibrary
 
 import android.app.Application
-import ru.alexanderklimov.library.PaymentSDK
+import ru.alexanderklimov.library.PaymentService
 
 class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        PaymentSDK.initialize(applicationContext)
+        PaymentService.initialize(applicationContext)
     }
 }

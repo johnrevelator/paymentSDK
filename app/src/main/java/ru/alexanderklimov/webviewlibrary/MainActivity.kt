@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import ru.alexanderklimov.library.PaymentSDK
+import ru.alexanderklimov.library.PaymentService
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,13 +14,14 @@ class MainActivity : AppCompatActivity() {
             openSdk()
         }
         browserCheckBox.setOnCheckedChangeListener { _, isChecked ->
-            PaymentSDK.defaultBrowser = isChecked
+            PaymentService.defaultBrowser = isChecked
         }
     }
 
     private fun openSdk() {
+        val payload = mutableMapOf<String, Any>()
         try {
-            PaymentSDK.openPayment(urlEditText.text.toString())
+            PaymentService.openPayment(payload)
         } catch (t: Throwable) {
             Toast.makeText(this, t.message, Toast.LENGTH_LONG).show()
         }

@@ -6,7 +6,7 @@ import android.net.Uri
 import android.webkit.URLUtil
 import java.net.URL
 
-object PaymentSDK {
+object PaymentService {
 
     internal const val CURRENT_URL = "CURRENT_URL"
     private const val URL_KEY = "webSBPayLink"
@@ -41,7 +41,7 @@ object PaymentSDK {
 
     private fun navigateToWebView(url: String) {
         applicationContext.startActivity(
-            Intent(applicationContext, PaymentSDKActivity::class.java).putExtra(
+            Intent(applicationContext, PaymentActivity::class.java).putExtra(
                 CURRENT_URL,
                 url
             ).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

@@ -11,9 +11,9 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.webview_main.*
-import ru.alexanderklimov.library.PaymentSDK.CURRENT_URL
+import ru.alexanderklimov.library.PaymentService.CURRENT_URL
 
-class PaymentSDKActivity : AppCompatActivity() {
+class PaymentActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
